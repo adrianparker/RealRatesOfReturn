@@ -1,5 +1,7 @@
 """Tests data_provider.py. """
-from src.data_provider import *
+from src.data_provider import get_call_accounts
+from src.data_provider import get_call_accounts_from_html
+from src.data_provider import get_call_account_institution_names
 
 
 def test_get_call_accounts():

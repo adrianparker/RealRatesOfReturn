@@ -8,10 +8,6 @@ def _get_sample_call_accounts():
     return data_provider.get_call_accounts()
 
 
-def _get_sample_call_account_institutions():
-    return data_provider.get_institution_names()
-
-
 def test_get_account_with_maximum_nominal():
     accounts = _get_sample_call_accounts()
     maximum_rate_accounts = account_helper.get_accounts_with_maximum_nominal(
