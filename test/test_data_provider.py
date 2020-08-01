@@ -2,6 +2,7 @@
 from src.data_provider import get_call_accounts
 from src.data_provider import get_call_accounts_from_html
 from src.data_provider import get_call_account_institution_names
+from src.data_provider import _get_accounts_by_institution_type
 
 
 def test_get_call_accounts():
@@ -40,3 +41,8 @@ def test_get_call_accounts_from_html():
 
 def test_get_call_account_institution_names():
     assert(len(get_call_account_institution_names()) == 31)
+
+
+def test_get_accounts_by_institution_types():
+    chunks = _get_accounts_by_institution_type('')
+    assert(len(chunks) == 5)

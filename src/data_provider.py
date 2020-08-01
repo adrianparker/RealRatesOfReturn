@@ -77,6 +77,15 @@ def _get_institution_names(html):
     return institutions
 
 
+def _get_accounts_by_institution_type(html):
+    html = _get_call_account_html(False)
+    soup = BeautifulSoup(html, 'html.parser')
+    # get divs with classes 'panel-pane' and 'pane-node'
+    institution_type_chunks = soup.select('div.panel-pane.pane-node')
+
+    return institution_type_chunks
+
+
 def _get_nominal(tag):
     # tag may include an up or down indicator img; if so will be child b tag
     b = tag.find('b')
