@@ -1,6 +1,8 @@
 """Tests return_adjustments.py functions """
 
-from src.return_adjustments import *
+from src.return_adjustments import after_tax_return
+from src.return_adjustments import real_return
+from src.return_adjustments import real_return_from_nominal
 
 
 def test_after_tax_return():

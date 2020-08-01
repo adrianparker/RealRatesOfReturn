@@ -4,7 +4,7 @@ A collection of return adjustment calculation functions.
 @author Adrian Parker
 """
 
-from decimal import *
+from decimal import getcontext
 
 getcontext().prec = 4
 

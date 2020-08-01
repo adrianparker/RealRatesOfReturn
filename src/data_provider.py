@@ -100,7 +100,7 @@ def _get_call_account_html(live=True):
         raise NotImplementedError()
     else:
         # sample taken at 17/07/2020
-        return """
+        return r"""
     <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
